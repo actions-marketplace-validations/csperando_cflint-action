@@ -5,4 +5,4 @@ cd ..
 cd ..
 cd target
 
-java -jar CFLint-1.5.0-all.jar -folder "::$folder-to-lint"
+java -jar CFLint-1.5.0-all.jar -folder "$folder-to-lint"

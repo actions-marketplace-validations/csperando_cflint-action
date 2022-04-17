@@ -14,8 +14,5 @@ echo "::endgroup::"
 
 echo "::group::get output"
 ls
-echo ""
-echo ""
-cd ../../target
-ls
+echo "::set-output name=results::cflint-results.html"
 echo "::endgroup::"

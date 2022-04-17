@@ -1,10 +1,8 @@
 #!/bin/sh -l
 
-ls
+echo "There has to be a better way to deal with these directories..."
 cd ..
 cd ..
-ls
 cd target
-ls
 
-java -jar CFLint-1.5.0-all.jar -help
+java -jar CFLint-1.5.0-all.jar -folder "::$folder-to-lint"

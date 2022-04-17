@@ -14,7 +14,8 @@ echo "::endgroup::"
 
 echo "::group::format output"
 results=`cat cflint-result.html`
-results="${results//$'\n'/'%0A'}"
+results="${results//$'\n'/''}"
+results="${results//$'\r'/''}"
 echo $results
 echo "::set-output name=results::$results"
 echo "::endgroup::"

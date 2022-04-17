@@ -1,4 +1,5 @@
 
+# JDK 11
 FROM eclipse-temurin:11-jdk-alpine
 
 ARG MAVEN_VERSION=3.8.5
@@ -30,6 +31,3 @@ RUN mvn install -DskipTests
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-
-# Cannot use values from gh actions as build arguments yet
-# CMD ["java -jar target/CFLint-1.5.0-all.jar -folder $folder-to-lint"]

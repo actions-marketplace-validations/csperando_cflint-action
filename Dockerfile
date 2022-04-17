@@ -22,7 +22,6 @@ RUN mvn --version
 
 
 # CFLint 1.5.0
-ARG rules-directory=
 ARG folder-to-lint=
 
 COPY pom.xml /pom.xml

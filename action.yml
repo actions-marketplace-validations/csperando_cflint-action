@@ -1,10 +1,6 @@
 name: "cflint"
 description: "testing mvn within gh actions"
 inputs:
-  rules-directory:
-    description: "where to find cflint rules (.cflintrc)"
-    required: false
-    default: "/"
   folder-to-lint:
     description: "Target directory for cflint"
     required: true

@@ -5,6 +5,10 @@ inputs:
     description: "where to find cflint rules (.cflintrc)"
     required: false
     default: "/"
+  folder-to-lint:
+    description: "Target directory for cflint"
+    required: true
+    default: "/error"
 outputs:
   results:
     description: "lint result"

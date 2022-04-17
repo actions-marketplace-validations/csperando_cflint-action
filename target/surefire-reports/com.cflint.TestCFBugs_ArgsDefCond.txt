@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cflint.TestCFBugs_ArgsDefCond
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.492 sec - in com.cflint.TestCFBugs_ArgsDefCond

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cflint.TestCFBugs_VarScoper_Names" time="6.37" tests="48" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17+35-LTS-2724"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/coleman/desktop/cflint"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/coleman/Desktop/cflint"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17+35-LTS-2724"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/ww/5jzcq1017yj3jkxk6fjbdbch0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/apache-maven-3.8.4/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/coleman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/apache-maven-3.8.4/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="11.6.4"/>
+    <property name="library.jansi.path" value="/opt/apache-maven-3.8.4/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/coleman"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="coleman"/>
+    <property name="java.class.path" value="/opt/apache-maven-3.8.4/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -X"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/opt/apache-maven-3.8.4"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2021-09-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="testScope_Name_Vard[CFQuery]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.133"/>
+  <testcase name="testScope_Name[CFQuery]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.115"/>
+  <testcase name="testScope_Name_Vard[CFFeed]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.116"/>
+  <testcase name="testScope_Name[CFFeed]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.108"/>
+  <testcase name="testScope_Name_Vard[CFHttp]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.112"/>
+  <testcase name="testScope_Name[CFHttp]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.161"/>
+  <testcase name="testScope_Name_Vard[CFDirectory]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.147"/>
+  <testcase name="testScope_Name[CFDirectory]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.139"/>
+  <testcase name="testScope_Name_Vard[CFForm]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.134"/>
+  <testcase name="testScope_Name[CFForm]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.128"/>
+  <testcase name="testScope_Name_Vard[CFFtp]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.168"/>
+  <testcase name="testScope_Name[CFFtp]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.162"/>
+  <testcase name="testScope_Name_Vard[CFObject]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.168"/>
+  <testcase name="testScope_Name[CFObject]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.141"/>
+  <testcase name="testScope_Name_Vard[CFSearch]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.163"/>
+  <testcase name="testScope_Name[CFSearch]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.169"/>
+  <testcase name="testScope_Name_Vard[CFProcResult]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.134"/>
+  <testcase name="testScope_Name[CFProcResult]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.127"/>
+  <testcase name="testScope_Name_Vard[CFPop]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.149"/>
+  <testcase name="testScope_Name[CFPop]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.134"/>
+  <testcase name="testScope_Name_Vard[CFRegistry]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.146"/>
+  <testcase name="testScope_Name[CFRegistry]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.11"/>
+  <testcase name="testScope_Name_Vard[CFReport]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.117"/>
+  <testcase name="testScope_Name[CFReport]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.122"/>
+  <testcase name="testScope_Name_Vard[CFDBInfo]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.112"/>
+  <testcase name="testScope_Name[CFDBInfo]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.11"/>
+  <testcase name="testScope_Name_Vard[CFDocument]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.131"/>
+  <testcase name="testScope_Name[CFDocument]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.122"/>
+  <testcase name="testScope_Name_Vard[CFCollection]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.129"/>
+  <testcase name="testScope_Name[CFCollection]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.114"/>
+  <testcase name="testScope_Name_Vard[CFPdf]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.12"/>
+  <testcase name="testScope_Name[CFPdf]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.137"/>
+  <testcase name="testScope_Name_Vard[CFZip]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.127"/>
+  <testcase name="testScope_Name[CFZip]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.128"/>
+  <testcase name="testScope_Name_Vard[CFLdap]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.134"/>
+  <testcase name="testScope_Name[CFLdap]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.137"/>
+  <testcase name="testScope_Name_Vard[CFChart]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.126"/>
+  <testcase name="testScope_Name[CFChart]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.133"/>
+  <testcase name="testScope_Name_Vard[CFHtmlToPdf]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.14"/>
+  <testcase name="testScope_Name[CFHtmlToPdf]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.131"/>
+  <testcase name="testScope_Name_Vard[CFImage]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.126"/>
+  <testcase name="testScope_Name[CFImage]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.132"/>
+  <testcase name="testScope_Name_Vard[CFImap]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.13"/>
+  <testcase name="testScope_Name[CFImap]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.132"/>
+  <testcase name="testScope_Name_Vard[CFSharepoint]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.125"/>
+  <testcase name="testScope_Name[CFSharepoint]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.136"/>
+  <testcase name="testScope_Name_Vard[CFSpreadsheet]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.124"/>
+  <testcase name="testScope_Name[CFSpreadsheet]" classname="com.cflint.TestCFBugs_VarScoper_Names" time="0.131"/>
+</testsuite>

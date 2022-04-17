@@ -1,0 +1,84 @@
+{
+  "version" : "",
+  "timestamp" : 0,
+  "issues" : [ {
+    "severity" : "INFO",
+    "id" : "COMPONENT_INVALID_NAME",
+    "message" : "COMPONENT_INVALID_NAME",
+    "category" : "CFLINT",
+    "abbrev" : "CI",
+    "locations" : [ {
+      "fileName" : "test.cfc",
+      "function" : "",
+      "offset" : 0,
+      "column" : 0,
+      "line" : 1,
+      "message" : "Component name test is not a valid name. Please use PascalCase and start with a capital letter.",
+      "variable" : "",
+      "expression" : "component {/n  public string function getStringFromStruct(interestingVar)     {/n      return interestingVar;/n/n    }/n}"
+    } ]
+  }, {
+    "severity" : "INFO",
+    "id" : "FUNCTION_HINT_MISSING",
+    "message" : "FUNCTION_HINT_MISSING",
+    "category" : "CFLINT",
+    "abbrev" : "FH",
+    "locations" : [ {
+      "fileName" : "test.cfc",
+      "function" : "getStringFromStruct",
+      "offset" : 29,
+      "column" : 16,
+      "line" : 2,
+      "message" : "Function getStringFromStruct is missing a hint.",
+      "variable" : "getStringFromStruct",
+      "expression" : "public string function getStringFromStruct(interestingVar)   {/n    return interestingVar;/n/n  }"
+    } ]
+  }, {
+    "severity" : "INFO",
+    "id" : "FUNCTION_HINT_MISSING",
+    "message" : "FUNCTION_HINT_MISSING",
+    "category" : "CFLINT",
+    "abbrev" : "FH",
+    "locations" : [ {
+      "fileName" : "test.cfc",
+      "function" : "getStringFromStruct",
+      "offset" : 29,
+      "column" : 16,
+      "line" : 2,
+      "message" : "Function getStringFromStruct is missing a hint.",
+      "variable" : "getStringFromStruct",
+      "expression" : "public string function getStringFromStruct(interestingVar)   {/n    return interestingVar;/n/n  }"
+    } ]
+  }, {
+    "severity" : "INFO",
+    "id" : "FUNCTION_HINT_MISSING",
+    "message" : "FUNCTION_HINT_MISSING",
+    "category" : "CFLINT",
+    "abbrev" : "FH",
+    "locations" : [ {
+      "fileName" : "test.cfc",
+      "function" : "getStringFromStruct",
+      "offset" : 29,
+      "column" : 16,
+      "line" : 2,
+      "message" : "Function getStringFromStruct is missing a hint.",
+      "variable" : "getStringFromStruct",
+      "expression" : "public string function getStringFromStruct(interestingVar)   {/n    return interestingVar;/n/n  }"
+    } ]
+  } ],
+  "counts" : {
+    "totalFiles" : 3,
+    "totalLines" : 18,
+    "countByCode" : [ {
+      "code" : "FUNCTION_HINT_MISSING",
+      "count" : 3
+    }, {
+      "code" : "COMPONENT_INVALID_NAME",
+      "count" : 1
+    } ],
+    "countBySeverity" : [ {
+      "severity" : "INFO",
+      "count" : 4
+    } ]
+  }
+}

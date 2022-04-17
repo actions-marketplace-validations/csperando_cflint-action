@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cflint.integration.TestFiles
+-------------------------------------------------------------------------------
+Tests run: 209, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.317 sec - in com.cflint.integration.TestFiles

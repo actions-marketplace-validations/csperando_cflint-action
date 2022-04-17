@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cflint.TestCFBugs_MethodNames
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.506 sec - in com.cflint.TestCFBugs_MethodNames

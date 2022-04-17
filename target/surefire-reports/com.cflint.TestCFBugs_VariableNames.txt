@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cflint.TestCFBugs_VariableNames
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.413 sec - in com.cflint.TestCFBugs_VariableNames

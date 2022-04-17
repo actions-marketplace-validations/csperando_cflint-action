@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cflint.TestCFBugs_VarScoper_TagAttr
+-------------------------------------------------------------------------------
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.165 sec - in com.cflint.TestCFBugs_VarScoper_TagAttr

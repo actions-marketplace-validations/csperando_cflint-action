@@ -7,7 +7,7 @@ inputs:
     default: "/"
 outputs:
     results:
-    description: "lint results"
+    description: "lint result"
 runs:
   using: "docker"
   image: "Dockerfile"

@@ -14,6 +14,6 @@ echo "::endgroup::"
 
 echo "::group::get output"
 ls
-results=`cat cflint-results.html`
+results=`cat cflint-result.html`
 echo "::set-output name=results::$results"
 echo "::endgroup::"

@@ -1,12 +1,14 @@
-# Set up jdk 11 and maven
-FROM eclipse-temurin:11-jdk-alpine
-
-RUN apk add --no-cache curl tar bash procps
 
 ARG MAVEN_VERSION=3.8.5
 ARG USER_HOME_DIR="/root"
 ARG SHA=89ab8ece99292476447ef6a6800d9842bbb60787b9b8a45c103aa61d2f205a971d8c3ddfb8b03e514455b4173602bd015e82958c0b3ddc1728a57126f773c743
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
+
+
+# Set up jdk 11 and maven
+FROM eclipse-temurin:11-jdk-alpine
+
+RUN apk add --no-cache curl tar bash procps
 
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
@@ -22,12 +24,13 @@ RUN mvn --version
 
 
 # CFLint 1.5.0
-ARG folder-to-lint=
-
 COPY pom.xml /pom.xml
 COPY src /src
 COPY target /target
 
 RUN mvn install -DskipTests
 
-CMD ["java -jar target/CFLint-1.5.0-all.jar -folder $folder-to-lint"]
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Cannot use values from gh actions as build arguments yet
+# CMD ["java -jar target/CFLint-1.5.0-all.jar -folder $folder-to-lint"]

@@ -12,8 +12,9 @@ echo "::group::linting directory: $1"
 java -jar ../../target/CFLint-1.5.0-all.jar -folder "$1"
 echo "::endgroup::"
 
-echo "::group::get output"
+echo "::group::format output"
 results=`cat cflint-result.html`
+results="${results//$'\n'/'%0A'}"
 echo $results
 echo "::set-output name=results::$results"
 echo "::endgroup::"

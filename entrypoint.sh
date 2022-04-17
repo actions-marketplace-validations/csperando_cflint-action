@@ -8,10 +8,6 @@ cd target
 ls
 echo "::endgroup::"
 
-echo $0
-echo $1
-echo $2
-
-echo "::group::linting directory: $0"
-java -jar CFLint-1.5.0-all.jar -folder "$0"
+echo "::group::linting directory: $1"
+java -jar CFLint-1.5.0-all.jar -folder "$1"
 echo "::endgroup::"

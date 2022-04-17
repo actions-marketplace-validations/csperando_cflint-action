@@ -1,12 +1,12 @@
 name: "cflint"
 description: "testing mvn within gh actions"
 inputs:
-  rules-directory:
+    rules-directory:
     description: "where to find cflint rules (.cflintrc)"
     required: false
     default: "/"
 outputs:
-  results:
+    results:
     description: "lint results"
 runs:
   using: "docker"

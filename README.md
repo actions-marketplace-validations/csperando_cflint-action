@@ -39,7 +39,7 @@ jobs:
 
     - name: Lint Codebase
       id: lint
-      uses: csperando/cflint-action@v1.0.0
+      uses: csperando/cflint-action@v1
       with:
         folder-to-lint: .
 

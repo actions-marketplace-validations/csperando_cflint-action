@@ -12,7 +12,7 @@ java -jar CFLint-1.5.0-all.jar -folder <folder-to-lint>
 
 | name | required | description |
 | :-- | :-- | :-- |
-| `folder-to-lint` | `true` | the directory to scan when executing the cflint .jar |
+| `folder-to-lint` | `true` | The directory to scan when executing the cflint .jar. If using actions/checkout@v3 then this is simply `.` |
 
 ## Outputs
 

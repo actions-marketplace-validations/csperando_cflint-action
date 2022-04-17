@@ -5,4 +5,5 @@ cd ..
 cd ..
 cd target
 
-java -jar CFLint-1.5.0-all.jar -folder "$folder-to-lint"
+echo "linting directory: $1"
+java -jar CFLint-1.5.0-all.jar -folder "$1"

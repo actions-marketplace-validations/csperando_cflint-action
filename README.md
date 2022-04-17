@@ -1,6 +1,6 @@
 # cflint-action
 
-Easily integrate CFLint with your normal GitHub actions workflows. This is based on the [CFLint project]().
+Easily integrate CFLint with your normal GitHub actions workflows. This is based on the [CFLint project](https://github.com/cflint/CFLint).
 
 ## Inputs
 

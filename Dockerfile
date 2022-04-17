@@ -25,6 +25,7 @@ RUN mvn --version
 COPY pom.xml /pom.xml
 COPY src /src
 COPY target /target
+COPY entrypoint.sh /entrypoint.sh
 
 RUN mvn install -DskipTests
 

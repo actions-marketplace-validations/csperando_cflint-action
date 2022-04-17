@@ -13,6 +13,6 @@ java -jar ../../target/CFLint-1.5.0-all.jar -folder "$1"
 echo "::endgroup::"
 
 echo "::group::get output"
-results=`cat cflint-result.html`
+results="$(`cat cflint-result.html`)"
 echo "::set-output name=results::$results"
 echo "::endgroup::"

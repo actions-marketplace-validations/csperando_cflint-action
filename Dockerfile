@@ -27,6 +27,8 @@ COPY src /src
 COPY target /target
 RUN mvn install -DskipTests
 
+COPY target/CFLint-1.5.0-all.jar /target/CFLint-1.5.0-all.jar
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]

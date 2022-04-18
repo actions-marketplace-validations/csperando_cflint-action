@@ -7,8 +7,8 @@ java -jar /target/CFLint-1.5.0-all.jar -d -folder "$1"
 
 echo results=`cat cflint-result.html`
 results=`cat cflint-result.html`
-results="${results//$'\n'/''}"
-results="${results//$'\r'/''}"
+# results="${results//$'\n'/''}"
+# results="${results//$'\r'/''}"
 
 echo "::set-output name=results::$results"
 

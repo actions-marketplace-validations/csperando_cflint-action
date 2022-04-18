@@ -1,5 +1,6 @@
 .DS_Store
 *.jar
-target/cflint-results.html
+
 target/cflint-result.html
+target/cflint-result.txt
 target/classes/git.properties

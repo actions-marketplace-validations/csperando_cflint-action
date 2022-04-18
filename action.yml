@@ -1,4 +1,4 @@
-name: "cflint"
+name: "cflint-action"
 description: "testing mvn within gh actions"
 inputs:
   folder-to-lint:

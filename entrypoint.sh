@@ -8,7 +8,6 @@ echo "::endgroup::"
 echo "::group::format results"
 echo results=`cat cflint-result.txt`
 results=`cat cflint-result.txt`
-results="${results//$'\n'/''}"
-results="${results//$'\r'/''}"
+results="${results//$'\n'/' '}"
 echo "::set-output name=results::$results"
 echo "::endgroup::"

@@ -1,7 +1,15 @@
 #!/bin/sh -l
 
 echo "::group::linting directory: $1"
+
 ls
+echo "\n Up One \n"
+cd ..
+ls
+echo "\n Up One \n"
+cd ..
+ls
+
 # java -jar ../../target/CFLint-1.5.0-all.jar -help
 echo "::endgroup::"
 

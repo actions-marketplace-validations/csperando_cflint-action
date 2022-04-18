@@ -8,7 +8,7 @@ ls
 cd /target
 ls
 
-results=`cat /target/cflint-result.html`
+results=`cat cflint-result.html`
 results="${results//$'\n'/''}"
 results="${results//$'\r'/''}"
 

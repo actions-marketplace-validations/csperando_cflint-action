@@ -1,6 +1,6 @@
 # cflint-action
 
-Easily integrate CFLint with your normal GitHub actions workflows. This is based on the [CFLint project](https://github.com/cflint/CFLint).
+~~Easily~~ integrate CFLint with your normal GitHub actions workflows. Source: [CFLint](https://github.com/cflint/CFLint)
 
 ## Inputs
 
@@ -30,6 +30,10 @@ The location of the output by default is within `/target`. However, within the G
   
 ## Example usage
 
+<details>
+  
+  <summary>Scan folder and email results</summary>
+  
 ```yaml
 name: Java CI with Maven
 
@@ -60,13 +64,18 @@ jobs:
         other params: here
         html_body: file://cflint-result.html
 ```
-
+</details>
+  
 # Contributing
   
-Fork and pull away! There is no clear direction for this project yet, or a contributing policy. Here are a few goals:
+Fork and pull away! There is no clear direction for this project yet, or a contributing policy.
   
-* Clone from the original [CFLint]() during build
+<details>
+  
+  <summary>Goals</summary>
+  
+* Clone from the source - [CFLint](https://github.com/cflint/CFLint) during build
 * Get list of changed directories and files for linting rather than entire codebase or specific directory
 * Improve debugging when executing with `-d` flag / general improvements (any) to stdout while linting to provide linting information w/out requiring email
   
-  
+</details>

@@ -4,6 +4,7 @@ echo "::group::linting directory: $1"
 
 java -jar /target/CFLint-1.5.0-all.jar -folder "$1"
 
+ls
 cd /target
 ls
 

@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 echo "::group::linting directory: $1"
-java -jar /target/CFLint-1.5.0-all.jar -help
+java -jar /target/CFLint-1.5.0-all.jar -folder "$1"
 echo "::endgroup::"
 
 # echo "::group::format output"

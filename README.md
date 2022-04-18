@@ -4,20 +4,30 @@ Easily integrate CFLint with your normal GitHub actions workflows. This is based
 
 ## Inputs
 
-CFLint has many options when it comes to scanning folders/files and executing the linting .jar file. However, at this time our docker container only executes the .jar using the -folder tag:
+<details>
+
+  <summary>Scan a folder</summary>
+
+CFLint has many options when it comes to scanning different folders/files, formatting output, and more. However, at this time our action only executes a very simple command, quietly scanning a given directory and outputting the default `cflint-result.html` in the current directory.
 
 ```bash
-java -jar CFLint-1.5.0-all.jar -folder <folder-to-lint>
+java -jar CFLint-1.5.0-all.jar -q -folder <folder-to-lint>
 ```
 
 | name | required | description |
 | :-- | :-- | :-- |
 | `folder-to-lint` | `true` | The directory to scan when executing the cflint .jar. If using actions/checkout@v3 then this is simply `.` |
-
+</details>
+  
 ## Outputs
 
-Within `target/` the results are compiled into `cflint-result.html`. The content of this file is then passed as an output after removing newline characters.
+<details>
 
+  <summary>cflint-result.html</summary>
+  
+The location of the output by default is within `/target`. However, within the GitHub actions environment, even without specifying the output file's location `cflint-result.html` is written into the current working directory. So if you use `actions/checkout` within your workflow, then your lint results file will be within `$GITHUB_WORKSPACE`. 
+</details>
+  
 ## Example usage
 
 ```yaml
@@ -44,15 +54,19 @@ jobs:
         folder-to-lint: .
 
     # optional: email lint report
-    # - name: Send mail
-    #   uses: dawidd6/action-send-mail@v3
-    #   with:
-    #     server_address: smtp.gmail.com
-    #     server_port: 465
-    #     username: ${{secrets.username}}
-    #     password: ${{secrets.password}}
-    #     subject: CFLint Report Attached
-    #     to: email@email.email
-    #     from: email@email.email
-    #     html_body: "${{ steps.lint.outputs.results }}"
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v3
+      with:
+        other params: here
+        html_body: file://cflint-result.html
 ```
+
+# Contributing
+  
+Fork and pull away! There is no clear direction for this project yet, or a contributing policy. Here are a few goals:
+  
+* Clone from the original [CFLint]() during build
+* Get list of changed directories and files for linting rather than entire codebase or specific directory
+* Improve debugging when executing with `-d` flag / general improvements (any) to stdout while linting to provide linting information w/out requiring email
+  
+  

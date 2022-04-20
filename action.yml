@@ -1,5 +1,8 @@
 name: "cflint-action"
 description: "ColdFusion linting tool for your workflow"
+branding:
+  icon: "search"
+  color: "green"
 inputs:
   folder-to-lint:
     description: "Target directory for cflint"

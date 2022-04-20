@@ -1,5 +1,5 @@
 name: "cflint-action"
-description: "testing mvn within gh actions"
+description: "ColdFusion linting tool for your workflow"
 inputs:
   folder-to-lint:
     description: "Target directory for cflint"
